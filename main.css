@@ -1,0 +1,60 @@
+
+body{
+    overflow: hidden;
+}
+
+.form-container{
+    position: absolute;
+    left: 40%;
+    top: 27%;
+    text-align: center;
+    background-color: beige;
+    width: 35vh;
+    height: 35vh;
+}
+
+.form-container > label{
+    position: relative;
+    top: 1rem;
+    font-weight: bold;
+    color: darkolivegreen;
+    font-size: 25px;
+    padding-top: 5rem;
+}
+.form{
+    position: relative;
+    top: 2rem;
+    text-align: left;
+    padding: 10px 10px;
+    margin: 15px 15px;
+}
+
+.form > label,input{
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#loginbtn{
+    font-size: 18px;
+    margin: 10px;
+    padding: 4px;
+    background-color: lightgreen;
+    color: darkolivegreen;
+    border: 1px solid darkolivegreen;
+    border-radius: 5px;
+    width: 100px;
+}
+#loginbtn:hover{
+    background-color: rgb(141, 199, 42);
+    color: white;
+}
+#loginbtn:active{
+    background-color: lightgreen;
+    color: darkblue;
+}
+
+
+
