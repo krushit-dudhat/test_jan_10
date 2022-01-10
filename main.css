@@ -1,7 +1,4 @@
 
-body{
-    overflow: hidden;
-}
 
 .form-container{
     position: absolute;
@@ -9,8 +6,8 @@ body{
     top: 27%;
     text-align: center;
     background-color: beige;
-    width: 35vh;
-    height: 35vh;
+    width: 21rem;
+    height: 20rem;
 }
 
 .form-container > label{
