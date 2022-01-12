@@ -63,6 +63,24 @@ form label{
     font-size: 18px;
 }
 
+.custom-radio{
+    display: flex;
+}
+.custom-radio input[type="radio"]{
+    display: none;
+}
+.custom-radio > input + label{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    border: 1px solid rgb(8, 255, 243);
+    border-radius: 50%;
+}
+.custom-radio > input:checked + label{
+    background-color: rgb(8, 255, 243);
+}
+
 .custom-checkbox{
     display: flex;
 }
