@@ -1,0 +1,130 @@
+body{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.main-container{
+    background-color: rgb(0, 225, 255);
+    width: 800px;
+    height: auto;
+    position:absolute;
+    left: 29%;
+}
+
+.homepage-container{
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.logo-container{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.logo-container > img {
+    width: 160px;
+    height: 130px;
+    padding: 15px;
+
+}
+.logo-container > div {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.form-container{
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+    padding-right: 70px;
+}
+
+form > div{
+    padding: 5px;
+    margin: 5px;
+}
+.custom-textbox > input, select{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    border-bottom: solid 1px rgb(8, 255, 243);
+}
+form label{
+    color: rgb(42, 41, 41);
+    font-size: 18px;
+}
+
+.custom-checkbox{
+    display: flex;
+}
+form input[type="checkbox"]{
+    display: none;
+}
+.custom-checkbox > label{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid rgb(8, 255, 243);
+    margin-right: 5px;
+}
+.custom-checkbox > span {
+    font-size: 20px;
+    margin-left: 5px;
+}
+#termncon:checked + label:after{
+    margin-left: 3px;
+    content: "\2713";
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(8, 255, 243);
+}
+.custom-checkbox > span > span{
+    color: rgb(8, 255, 243);
+}
+form button{
+    background: transparent;
+    border: 2px solid rgb(8, 255,243);
+    width: 130px;
+    height: 30px;
+    border-radius: 4px;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    font-size: 14px;
+    color: rgb(8, 255,243);
+}
+form button:hover{
+    background-color: rgb(8, 255,243);
+    color: rgb(255, 255, 255);
+}
+
+.grid-container{
+    padding-left: 20px;
+}
+.raw .column{
+    width: calc((100% - 20px * 2) / 2);
+    float: left;
+    margin-right:20px;
+    height: 300px;
+    overflow: hidden;
+}
+.raw:last-child{
+    float: right;
+    margin-right: 0px;
+}
+.raw .back-img{
+    background-image: url(natuer1.jpg);
+    display: block;
+    
+}
+.column > picture > img{
+    width: 100%;
+}

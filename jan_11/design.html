@@ -6,29 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div>
-        <div>
-            <img src="" alt="company logo" />
+    
+    <div class="main-container flex">
+        <div class="homepage-container">
+        <div class="logo-container">
+            <img src="logo.png" alt="company logo" />
             <div>
                 <label> Sign Up form </label>
             </div>
         </div>
-        <div>
+        <div class="form-container" >
             <form action="" method="post">
                 <div>
                     <label> Name: </label>
                 </div>
-                <div>
+                <div class="custom-textbox">
                     <input type="text" name="name" placeholder="Enter your name" />
                 </div>
                 <div>
                     <label> Date of birth: </label>
                 </div>
-                <div>
+                <div class="custom-textbox">
                     <input type="date" name="date" format="dd-MM-yyyy" />
                 </div>
                 <div>
@@ -37,36 +39,33 @@
                     <input type="radio" value="female" name="gender" /> Female
                 </div>
                 <div>
-                    <div>
                         <label> Email address : </label>
-                    </div>
-                    <div>
+                </div>
+                <div class="custom-textbox">
                         <input type="email" name="email" placeholder="Enter your email address" />
-                    </div>
                 </div>
                 <div>
-                    <div>
                         <label> Password </label>
-                    </div>
-                    <div>
+                </div>
+                <div class="custom-textbox">
                         <input type="password" name="password" placeholder="Enter your password" />
-                    </div>
                 </div>
                 <div>
-                    <div>
                         <label> Location </label>
-                    </div>
-                    <div>
+                </div>
+                <div class="custom-textbox">
                         <select id="location" name="location">
+                            <option value="" disabled selected hidden> Select Location </option>
                             <option value="ahmedabad"> Ahmedabad </option>
                             <option value="surat"> Surat </option>
                             <option value="kolkata"> Kolkata </option>
                             <option value="delhi"> Delhi </option>
                         </select>
-                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" name="termsncond" > I'm agree with all terms and conditions </input>
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="termncon" name="termsncon" ></input>
+                    <label for="termncon"></label>
+                    <span > I'm agree with all <span> terms and conditions </span> </span>
                 </div>
                 <div>
                     <button type="submit" value="signup" name="signup" > Sign up </button>
@@ -74,18 +73,24 @@
                 </div>
             </form>
         </div>
-        <div>
-            <div>
+        <div class="grid-container">
+        <div class="raw">
+            <div class="column back-img" >
                 <!-- background image is sat here  -->
             </div>
-            <div>
+            <div class="column">
                 <picture>
-                    <img src="" alt="img with picture tag" >
+                    <img src="natuer5.jpg" alt="img with picture tag" >
+                    <source media="(min-width:996px)" srcset="natuer4.jpg">
+                    <source media="(min-width:7800px)" srcset="natuer3.jpg">
+                    <source media="(min-width:650px)" srcset="natuer2.jpg">
                 </picture>
             </div>
         </div>
-
+        </div>
+        </div>
     </div>
+    
 </body>
 
 </html>
