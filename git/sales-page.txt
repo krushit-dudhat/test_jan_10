@@ -3,3 +3,5 @@ product 2 300rp q2
 product 3 200rp q300
 product 4 299rp q32
 product 3 200rp q34
+product 5 400rp q365
+product 6 100rp 
