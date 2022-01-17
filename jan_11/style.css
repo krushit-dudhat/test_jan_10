@@ -140,8 +140,7 @@ form button:hover{
 }
 .raw .back-img{
     background-image: url(natuer1.jpg);
-    display: block;
-    
+    background-size: contain;
 }
 .column > picture > img{
     width: 100%;
